@@ -251,3 +251,6 @@ begin
 					data_out <= "00000000";
 			end case;
 		end if;
+	end process;
+	
+end behavioral;

@@ -80,7 +80,7 @@ begin
 			        end if;
 
                 when setup_x =>
-			       -- reqx <= '1';
+			        reqx <= '1';
 			        present_state <= data_xfer;
 
                 when setup_y =>
@@ -88,7 +88,7 @@ begin
                     present_state <= data_yfer;
 
                 when data_xfer =>
-                    reqx <= '1';
+                    --reqx <= '1';
                     if(gntx = '1') then
                         present_state <= poll_fifo;
                     end if;
